@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Recipes for everyone</h1>
+    
         <nav>
             <ul>
                 <li><a href="index.html"> Home</a></li>
+                <li><a href="recipes.html"> Recipes</a></li>
             </ul>
+            <form action="/search" method="get">
+                <input type="text" name="search" id="search" placeholder="Search for recipes...">
+                <button type="submit">Search</button>
+            </form>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Recipes: </h2>
+            <h2>Recipes </h2>
             <ul id="recipe-list">
-                <!-- recepy links -->
+                <li>
+                    <a href="recipe.html">
+                        <img class="recipe1-img" src="https://kotivara.se/wp-content/uploads/2023/02/Pizza-scaled-1-1024x683.jpg" alt="Recipe 1">
+                    </a>
+                </li>
+                
             </ul>
         </section>
     </main>

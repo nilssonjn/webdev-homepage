@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipePizza</title>
+    <link rel"stylesheet" href="css/stylesPizza.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="recipes.html"> Recipes</a></li>
+            </ul>
+            <form action="/search" method="get">
+                <input type="text" name="search" id="search" placeholder="Search for recipes...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <section id="recipe-details">
+            <h2>Neapolitan Pizza</h2>
+            <p id="recipe-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam alias cum eaque id reiciendis, eius similique perferendis amet magnam earum</p>
+            <h3>Ingredients</h3>
+            <ul id="ingredients-list">
+                fetch from json
+            </ul>
+            <h3>Instructions</h3>
+            <ol id="instructions-list">
+                fetch from json
+        </section>
+        <section id="rating-section">
+            <h3>Rate this recipe</h3>
+            <form id="rating-form">
+                <label for="rating">Rate 1-5:</label>
+                <input type="number" name="rating" id="rating" min="1" max="5" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2024 Recipe collection</p>
+    </footer>
+    <scriot src="js/main.js"></script>
+</body>
+</html>

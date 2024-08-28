@@ -12,5 +12,5 @@ function submitRatingForm(event) {
     event.preventDefault();
 }
 
-elRatingForm.addEventListener("submit", submitRatingForm), false;
+elRatingForm.addEventListener("submit", submitRatingForm, false);
 

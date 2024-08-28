@@ -1,0 +1,49 @@
+{
+    "recipes": [
+        {
+            "id": "1",
+            "title": "Neapolitan Pizza",
+            "description": "The most famous pizza in the world, the Neapolitan pizza.",
+            "ingredients": [
+                "Flour",
+                "Water",
+                "Yeast",
+                "Salt",
+                "Tomato",
+                "Fiordilatte",
+                "Pecorino",
+                "Basil",
+                "Olive oil"
+            ],
+            "instructions": [
+                "Mix the flour, water, yeast and salt in a bowl.",
+                "Knead the dough for 10 minutes.",
+                "Let the dough rest for 20 minutes. Stretch and fold the dough every 20 minutes, repeating 3 times.",
+                "Let the dough rest for 12 hours. Divide the dough into 220g balls. And let rest until doubled in size.",
+                "Roll out the dough and add the tomato, fiordilatte, pecorino and basil.",
+                "Bake the pizza with a wood-fired oven at 430°C for 90 seconds.",
+                "If your cooking with a homeoven, bake the pizza at max temperature on a baking steel."
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Pasta Carbonara",
+            "description": "One of the most famous pasta in the world, the Pasta Carbonara.",
+            "ingredients": [
+                "Pasta",
+                "Guanciale or Pancetta",
+                "Pecorino",
+                "Egg",
+                "Black pepper"
+            ],
+            "instructions": [
+                "Cook the pasta in boiling salted water.",
+                "Fry the guanciale or pancetta in a pan.",
+                "Mix the egg, pecorino and black pepper in a bowl.",
+                "Drain the pasta and add it to the pan with the guanciale or pancetta.",
+                "Add the egg, pecorino and black pepper mixture to the pan.",
+                "Mix everything together and serve."
+            ]
+        }
+    ]
+}

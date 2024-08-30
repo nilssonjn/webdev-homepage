@@ -1,8 +1,4 @@
 const elRatingForm = document.getElementById("rating-form");
-
-const ul = document.querySelector('#ingredients-pizza');
-const url = 'data/recipes.json';
-
 function submitRatingForm(event) {
     let rating = document.getElementById("rating").value;
 
@@ -17,13 +13,20 @@ function submitRatingForm(event) {
 
 elRatingForm.addEventListener("submit", submitRatingForm, false);
 
+const pDescriptionPizza = document.querySelector('#description-pizza');
+const ulInstructionsPizza = document.querySelector('#instructions-pizza');
+const ulIngredientsPizza = document.querySelector('#ingredients-pizza');
+const url = 'data/recipes.json';
+
 fetch(url)
     .then((resp) => resp.json())
     .then(function(data) {
         console.log(data.recipes);
         let recipes = data.recipes;
-
-        ul.innerHTML = '';
+        
+        pDescriptionPizza.textContent = '';
+        ulInstructionsPizza.innerHTML = '';
+        ulIngredientsPizza.innerHTML = '';
 
         let pizzaRecipe = recipes.filter(function(recipe) {
             return recipe.id === 1;
@@ -33,11 +36,11 @@ fetch(url)
             recipe.ingredients.forEach(function(ingredient) {
                 let li = document.createElement('li');
                 li.textContent = ingredient;
-                ul.appendChild(li);
-            })
-        })
-        .catch(function(error) {
-            console.error(error);
+                ulIngredientsPizza.appendChild(li);
+            });
+        });
+    })
+    .catch(function(error) {
+        console.error(error);
     });
-});
 

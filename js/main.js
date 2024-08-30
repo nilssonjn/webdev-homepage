@@ -18,29 +18,36 @@ const ulInstructionsPizza = document.querySelector('#instructions-pizza');
 const ulIngredientsPizza = document.querySelector('#ingredients-pizza');
 const url = 'data/recipes.json';
 
-fetch(url)
-    .then((resp) => resp.json())
-    .then(function(data) {
-        console.log(data.recipes);
-        let recipes = data.recipes;
-        
-        pDescriptionPizza.textContent = '';
-        ulInstructionsPizza.innerHTML = '';
-        ulIngredientsPizza.innerHTML = '';
+function fetchRecipes(url) {
+    fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data) {
+            console.log(data.recipes);
+            let recipes = data.recipes;
 
-        let pizzaRecipe = recipes.filter(function(recipe) {
-            return recipe.id === 1;
-        });
-
-        pizzaRecipe.forEach(function(recipe) {
-            recipe.ingredients.forEach(function(ingredient) {
-                let li = document.createElement('li');
-                li.textContent = ingredient;
-                ulIngredientsPizza.appendChild(li);
+            let pizzaRecipe = recipes.filter(function(recipe) {
+                return recipe.id === 1;
             });
-        });
-    })
-    .catch(function(error) {
-        console.error(error);
-    });
 
+            pizzaRecipe.forEach(function(recipe) {
+                pDescriptionPizza.textContent = recipe.description;
+
+                recipe.instructions.forEach(function(instruction) {
+                    let li = document.createElement('li');
+                    li.textContent = instruction;
+                    ulInstructionsPizza.appendChild(li);
+                });
+
+                recipe.ingredients.forEach(function(ingredient) {
+                    let li = document.createElement('li');
+                    li.textContent = ingredient;
+                    ulIngredientsPizza.appendChild(li);
+                });
+            });
+        })
+        .catch(function(error) {
+            console.error(error);
+        });
+}
+
+fetchRecipes(url);

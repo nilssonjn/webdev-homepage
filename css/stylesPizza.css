@@ -24,3 +24,14 @@ main {
     text-align: center;
     height: 100vh;
 }
+
+#ingredients-pizza {
+    list-style-type: decimal; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    background-color: #f9f9f9; /* Light grey background */
+    margin: 5px 0; /* Space between items */
+    padding: 10px; /* Padding inside items */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+}

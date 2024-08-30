@@ -44,6 +44,27 @@
                 "Add the egg, pecorino and black pepper mixture to the pan.",
                 "Mix everything together and serve."
             ]
+        },
+        {
+            "id": "3",
+            "title": "Tiramisu",
+            "description": "The most famous dessert in the world, the Tiramisu.",
+            "ingredients": [
+                "Egg",
+                "Sugar",
+                "Mascarpone",
+                "Coffee",
+                "Ladyfingers",
+                "Cocoa powder"
+            ],
+            "instructions": [
+                "Mix the egg yolks and sugar in a bowl.",
+                "Add the mascarpone to the bowl and mix everything together.",
+                "Dip the ladyfingers in the coffee and place them in a dish.",
+                "Add a layer of the mascarpone mixture on top of the ladyfingers.",
+                "Repeat the process until you have no more ingredients.",
+                "Dust the top with cocoa powder and let it rest in the fridge for at least 4 hours."
+            ]
         }
     ]
 }

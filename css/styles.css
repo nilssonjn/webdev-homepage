@@ -59,19 +59,38 @@ main {
     padding: 1rem;
 }
 
-main ul {
-    list-style: none;
-}
-
 main h2 {
     margin: 1rem 0;
 }
 
-.recipe1-img {
+li {
+    display: grid;
+    place-items: center;
+}
+
+.recipe {
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.images {
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    flex-shrink: 0;
+    width: 300px;
+    border-radius: 14px;
+    text-align: center;
+    display: block;
+}
+
+.recipe img {
     width: 100%;
-    height: auto;
-    max-width: 520px;
-    
+    height: 200px;
+    border-radius: 14px;
 }
 
 footer {

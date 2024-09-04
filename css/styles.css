@@ -20,24 +20,19 @@ header {
     top: 0;
     grid-area: header;
     background-color: #444;
-    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 1000;
 }
 
-.recipe-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.beverage-icon {
+.recipe-icon,
+.beverage-icon,
+.facebook-icon,
+.instagram-icon,
+.youtube-icon {
     width: 1.7rem;
     height: 1.7rem;
-}
-
-[class*="-icon"] {
     margin-right: 0.3rem;
 }
 
@@ -49,17 +44,24 @@ nav {
 
 nav ul {
     display: flex;
-    list-style: none;
+    width: 100%;
+}
+
+nav li {
+    height: 4rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;  
     padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #555;
 }
 
 form {
@@ -108,10 +110,10 @@ footer {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         background-color: #fff;
         overflow: hidden;
-        
     }
 
     .images img {
+        will-change: transform;
         transition: transform 0.3s ease-in-out;
     }
 

@@ -24,13 +24,27 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+}
+
+.recipe-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.beverage-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+[class*="-icon"] {
+    margin-right: 0.3rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
 }
 
 nav ul {

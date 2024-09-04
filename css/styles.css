@@ -10,9 +10,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
+        "header"
+        "main"
+        "footer";
 }
 
 header {
@@ -51,6 +51,7 @@ nav li {
     height: 4rem;
 }
 
+form,
 nav a {
     color: white;
     text-decoration: none;  
@@ -62,11 +63,6 @@ nav a {
 
 nav a:hover {
     background-color: #555;
-}
-
-form {
-    display: flex;
-    align-items: center;
 }
 
 main {

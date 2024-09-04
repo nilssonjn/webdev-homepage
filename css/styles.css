@@ -93,6 +93,16 @@ footer {
         height: 400px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         background-color: #fff;
+        overflow: hidden;
+        
+    }
+
+    .images img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .images img:hover {
+        transform: scale(1.05);
     }
 
     .recipe img {

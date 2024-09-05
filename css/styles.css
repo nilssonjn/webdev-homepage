@@ -103,7 +103,7 @@ h2 {
     background: linear-gradient(to right, green, white, red);
     background-clip: text;
     color: transparent;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 li {

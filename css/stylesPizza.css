@@ -90,8 +90,8 @@ nav a:hover {
 }
 
 main {
+    display: grid;
     grid-area: main;
-    padding: 1rem;
     background-color: #666;
     color: white;
 }
@@ -126,10 +126,24 @@ footer {
     padding: 1rem;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.name {
+    grid-area: 1 / 4 / -7 / -1;
+    background-color: red;
+}
+
 .pizzaImg {
+    grid-area: 2 / 4 / -2 / -1;
+    background-color: blue;
     border: 1px solid #ddd;
     border-radius: 14px;
-    width: 300px;
+    width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;

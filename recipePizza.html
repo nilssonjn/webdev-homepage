@@ -30,27 +30,29 @@
         </nav>
     </header>
     <main>
-        <section id="recipe-details">
-            <h2>Neapolitan Pizza</h2>
-            <p id="description-pizza"></p>
-            <img class="pizzaImg" src="images/pizzaNeapolitan.webp" alt="Neapolitan Pizza">
-            <h3>Ingredients</h3>
-            <ul id="ingredients-pizza">
-                <li></li>
-            </ul>
-            <h3>Instructions</h3>
-            <ol id="instructions-pizza">
-                <li></li>
-            </ol>
-        </section>
-        <section id="rating-section">
-            <h3>Rate this recipe</h3>
-            <form id="rating-form">
-                <label for="rating">Rate 1-5:</label>
-                <input type="number" name="rating" id="rating" min="1" max="5" required>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+        <div class="grid-container">
+            <section id="recipe-details">
+                <h2>Neapolitan Pizza</h2>
+                <p id="description-pizza"></p>
+                <img class="pizzaImg" src="images/pizzaNeapolitan.webp" alt="Neapolitan Pizza">
+                <h3>Ingredients</h3>
+                <ul id="ingredients-pizza">
+                    <li class="txtIngredients"></li>
+                </ul>
+                <h3>Instructions</h3>
+                <ol id="instructions-pizza">
+                    <li class="txtInstructions"></li>
+                </ol>
+            </section>
+            <section id="rating-section">
+                <h3>Rate this recipe</h3>
+                <form id="rating-form">
+                    <label for="rating">Rate 1-5:</label>
+                    <input type="number" name="rating" id="rating" min="1" max="5" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Recipe collection</p>

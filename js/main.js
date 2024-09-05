@@ -1,3 +1,4 @@
+"use strict";
 const elRatingForm = document.getElementById("rating-form");
 function submitRatingForm(event) {
     let rating = document.getElementById("rating").value;

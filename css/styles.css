@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -20,6 +21,7 @@ header {
     top: 0;
     grid-area: header;
     background-color: #444;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,10 +94,16 @@ main {
     grid-area: main;
     text-align: center;
     padding: 1rem;
+    background-color: #666;
+    color: white;
 }
 
-main h2 {
+h2 {
     margin: 1rem 0;
+    background: linear-gradient(to right, green, white, red);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
 }
 
 li {
@@ -103,10 +111,25 @@ li {
     place-items: center;
 }
 
+footer li {
+    display: inline;
+}
+
+footer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0.5rem 0.5rem;
+    color: black;
+}
+
 footer {
     grid-area: footer;
     text-align: center;
-    border-top: 2px solid #000;
+    background-color: #444;
+    color: white;
+    padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -184,6 +207,10 @@ footer {
     header {
         display: flex;
         justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 }
 

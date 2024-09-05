@@ -10,13 +10,19 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="sidebar">
+                <li onclick= closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html"><img src="images/recipe-icon.svg" alt="recipe-icon" class="recipe-icon"> Recipes</a></li>
                 <li><a href="drinks.html"><img src="images/beverage-icon.svg" alt="beverage-icon" class="beverage-icon"> Beverage</a></li>
             </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html"><img src="images/recipe-icon.svg" alt="recipe-icon" class="recipe-icon"> Recipes</a></li>
+                <li class="hideOnMobile"><a href="drinks.html"><img src="images/beverage-icon.svg" alt="beverage-icon" class="beverage-icon"> Beverage</a></li>
+                <li class="menuButton" onclick= showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>   
+            </ul>
             <form action="/search" method="get">
-                <input type="text" name="search" id="search" placeholder="Search for recipes...">
-                <button type="submit">Search</button>
+                <input class="hideOnMobile" type="text" name="search" id="search" placeholder="Search for recipes...">
+                <button class="hideOnMobile" type="submit">Search</button>
             </form>
         </nav>
     </header>

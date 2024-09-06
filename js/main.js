@@ -30,6 +30,9 @@ function fetchRecipes(url) {
                 return recipe.id === 1;
             });
 
+            ulIngredientsPizza.innerHTML = '';
+            ulInstructionsPizza.innerHTML = '';
+
             pizzaRecipe.forEach(function(recipe) {
                 pDescriptionPizza.textContent = recipe.description;
 

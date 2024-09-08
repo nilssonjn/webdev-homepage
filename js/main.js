@@ -68,11 +68,7 @@ document.querySelector('.menuButton').addEventListener('click', showSidebar);
 
 function showSidebar() {
     const elSidebar = document.querySelector('.sidebar');
-    if (elSidebar.style.display === 'flex') {
-        elSidebar.style.display = 'none';
-    } else {
-        elSidebar.style.display = 'flex';
-    }
+    elSidebar.style.display = 'flex';
 }
 
 function closeSidebar() {

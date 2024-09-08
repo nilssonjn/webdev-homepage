@@ -56,8 +56,8 @@ nav li {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
-    z-index: 999;
+    width: 100vw;
+    z-index: 1000;
     background-color: #444;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -317,10 +317,6 @@ ul {
 
 @media (max-width: 576px) {
 
-    .sidebar {
-        width: 100%;
-    }
-
     .menuButton {
         display: block;
     }
@@ -335,9 +331,6 @@ ul {
 }
 
 @media (max-width: 767px) {
-    .sidebar {
-        display: none;
-    }
 
     .hideOnMobile {
         display: none;
@@ -346,5 +339,9 @@ ul {
     header {
         display: flex;
         justify-content: space-between;
+    }
+
+    .container {
+        padding: 0.5rem;
     }
 }

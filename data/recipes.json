@@ -5,15 +5,15 @@
             "title": "Neapolitan Pizza",
             "description": "The most famous pizza in the world, the Neapolitan pizza.",
             "ingredients": [
-                "Flour",
-                "Water",
-                "Yeast",
-                "Salt",
-                "Tomato",
-                "Fiordilatte",
-                "Pecorino",
-                "Basil",
-                "Olive oil"
+                "1kg flour",
+                "650g water",
+                "2g yeast",
+                "25g salt",
+                "tomato",
+                "fior di latte",
+                "pecorino",
+                "basil",
+                "olive oil"
             ],
             "instructions": [
                 "Dissolve the yeast and salt in some water then mix the flour and water together.",

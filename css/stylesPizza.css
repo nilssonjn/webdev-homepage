@@ -178,27 +178,22 @@ ul {
     list-style-type: none;
 }
 
-#ingredients-pizza {
+#ingredients-pizza, #instructions-pizza {
     align-self: flex-start;
     padding-left: 1.5rem;
     font-size: 1.2rem;
 }
 
-#instructions-pizza {
-    align-items: flex-start;
-    padding-left: 1.5rem;
-}
-
 #instructions-pizza li::marker {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: green;
     font-weight: 700; 
 }
 
-#instructions-pizza li {
+#instructions-pizza li, #ingredients-pizza li {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    line-height: 2;
+    line-height: 1.8;
 }
 
 #rating-section {

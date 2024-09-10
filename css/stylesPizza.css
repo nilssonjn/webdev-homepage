@@ -237,17 +237,21 @@ ul {
     align-self: center;
 }
 
-#comment:placeholder-shown {
+#comment:placeholder-shown, #name:placeholder-shown {
     padding: 0.3rem;
 }
 
-#comment {
+#name {
+    margin-bottom: 0.5rem;
+}
+
+#comment, #name {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 14px;
     padding: 0.3rem;
 }
 
-#comment:focus {
+#comment:focu, #name:focus {
     width: 100%;
     padding: 0.3rem;
 }
@@ -266,7 +270,7 @@ ul {
     margin-bottom: 0.5rem;
 }
 
-#comment-form textarea {
+#comment-form textarea, #name {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }

@@ -194,7 +194,7 @@ footer {
     overflow: hidden;;
 }
 
-.txtIngredients, .txtInstructions, .txtRating {
+.txtIngredients, .txtInstructions, .txtRating, .txtComments {
     font-size: 1.6rem;
     color: green;
     margin-bottom: 0.5rem;
@@ -227,23 +227,23 @@ ul {
     line-height: 1.8;
 }
 
-#rating-section {
+#rating-section, #comment-section {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.txtRating {
+.txtRating, .txtComments {
     align-self: center;
 }
 
-#rating-form {
+#rating-form, #comment-form {
     display: flex;
     flex-direction: column;
     align-self: center;
 }
 
-#rating-form label {
+#rating-form label, #comment-form {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     align-self: center;
@@ -257,7 +257,7 @@ ul {
     align-self: center;
 }
 
-#rating-form button {
+#rating-form button, #comment-section button {
     background-color: green;
     color: white;
     border: none;
@@ -268,7 +268,7 @@ ul {
     margin-bottom: 0.5rem;
 }
 
-#rating-form button:hover {
+#rating-form button:hover, #comment-section button:hover {
     background-color: darkgreen;
 }
 

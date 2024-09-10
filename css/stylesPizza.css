@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -25,6 +26,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgreen;
 }
 
 [class*="icon"] {
@@ -67,11 +82,7 @@ nav li {
     justify-content: flex-start;
 }
 
-.sidebar li {
-    width: 100%;
-}
-
-.sidebar a {
+.sidebar li, .sidebar a {
     width: 100%;
     box-sizing: border-box;
 }
@@ -99,10 +110,6 @@ main {
 
 h2 {
     font-size: 2rem;
-}
-
-footer li {
-    display: inline;
 }
 
 footer a {
@@ -134,21 +141,14 @@ footer {
 
 #btn-search {
     padding: 0.5rem 1rem;
-    border: none;
-    background-color: green;
     color: white;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 0 8px 8px 0;
-    transition: background-color 0.3s ease;
 }
 
 #search-input::placeholder {
     color: white;
-}
-
-#btn-search:hover {
-    background-color: darkgreen;
 }
 
 .container {
@@ -187,12 +187,9 @@ footer {
 
 .pizzaImg {
     max-width: 100%;
-    height: auto;
-    object-fit: cover;
     border-radius: 14px;
     margin-bottom: 0.5rem;
     border: 1px solid #ddd;
-    overflow: hidden;;
 }
 
 .txtIngredients, .txtInstructions, .txtRating, .txtComments {
@@ -283,8 +280,7 @@ ul {
     padding: 0.3rem;
 }
 
-#comment:focu, #name:focus {
-    width: 100%;
+#comment:focus, #name:focus {
     padding: 0.3rem;
 }
 
@@ -323,18 +319,8 @@ ul {
 }
 
 #rating-form button, #comment-section button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
     margin-bottom: 0.5rem;
-}
-
-#rating-form button:hover, #comment-section button:hover {
-    background-color: darkgreen;
 }
 
 .alert {

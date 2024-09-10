@@ -57,7 +57,8 @@
                 <section id="comment-section">
                     <h3 class="txtComments">Write a comment</h3>
                     <form id="comment-form">
-                        <input name="comment" id="comment" required placeholder="Write here..."></input>
+                        <textarea name="comment" id="comment" required placeholder="Write here..." rows="4" cols="30" style="resize: none;" maxlength="200"></textarea>
+                        <p id="comment-length">0/200</p>
                         <button type="submit">Submit</button>
                     </form>
                     <ul id="comments-list">

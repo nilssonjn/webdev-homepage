@@ -241,6 +241,11 @@ ul {
     padding: 0.3rem;
 }
 
+#comment {
+    width: 100%;
+    border-radius: 8px;
+}
+
 #comment:focus {
     padding: 0.3rem;
 }
@@ -255,7 +260,11 @@ ul {
     align-self: center;
 }
 
-#comment-form input {
+#comment-length {
+    margin-bottom: 0.5rem;
+}
+
+#comment-form textarea {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -272,6 +281,7 @@ ul {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     align-self: center;
+    border-radius: 8px;
 }
 
 #rating-form button, #comment-section button {

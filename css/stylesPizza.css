@@ -244,9 +244,11 @@ ul {
 #comment {
     width: 100%;
     border-radius: 8px;
+    padding: 0.3rem;
 }
 
 #comment:focus {
+    width: 100%;
     padding: 0.3rem;
 }
 

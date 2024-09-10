@@ -31,6 +31,7 @@ header {
     width: 1.7rem;
     height: 1.7rem;
     margin-right: 0.3rem;
+    color: black;
 }
 
 nav {
@@ -110,7 +111,7 @@ footer a {
     align-items: center;
     text-decoration: none;
     margin: 0.5rem 0.5rem;
-    color: black;
+    color: white;
 }
 
 footer {
@@ -386,6 +387,10 @@ ul {
 
     .description {
         font-size: 1rem;
+    }
+
+    #comment-section {
+        margin-top: 1rem;
     }
 }
 

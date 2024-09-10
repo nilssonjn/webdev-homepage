@@ -76,9 +76,3 @@ function displayComments () {
 };
 
 handleComments();
-
-const elBtnClearComments = document.getElementById("clear-comments");
-document.getElementById("clear-comments").addEventListener("click", function() {
-    localStorage.removeItem("comments");
-    displayComments();
-});

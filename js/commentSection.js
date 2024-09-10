@@ -4,7 +4,7 @@ const elCommentForm = document.getElementById("comment-form");
 const elNameInput = document.getElementById("name");
 const elCommentInput = document.getElementById("comment");
 const elCharCountDisplay = document.getElementById("comment-length");
-const allowedChars = /^[a-zA-Z0-9!?]*$/;
+const allowedChars = /^[a-zA-Z0-9!? ]*$/;
 
 function handleInput() {
 
@@ -58,10 +58,27 @@ function displayComments () {
 
     comments.forEach(function(comment) {
         let li = document.createElement("li");
-        li.textContent = `${comment.name}: ${comment.comment}`;
+        li.classList.add("comment-item");
+
+        let name = document.createElement("p");
+        name.classList.add("comment-name");
+        name.textContent = comment.name;
+
+        let text = document.createElement("p");
+        text.classList.add("comment-text");
+        text.textContent = comment.comment;
+        
+        li.appendChild(name);
+        li.appendChild(text);
         elCommentList.appendChild(li);
 
     });
 };
 
 handleComments();
+
+const elBtnClearComments = document.getElementById("clear-comments");
+document.getElementById("clear-comments").addEventListener("click", function() {
+    localStorage.removeItem("comments");
+    displayComments();
+});

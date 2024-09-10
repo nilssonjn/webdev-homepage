@@ -255,7 +255,7 @@ ul {
     align-self: center;
 }
 
-#comment-form textarea {
+#comment-form input {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
